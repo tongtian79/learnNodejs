@@ -1,4 +1,4 @@
-var http = require("http");|
+var http = require("module/http");|
 
 var server = http.createServer(function (req, res) {
     res.writeHead(200,{
