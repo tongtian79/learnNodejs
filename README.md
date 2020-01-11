@@ -1,5 +1,29 @@
 # learnNodejs
 Nodejs begin learner
+nodeJs是一个JS运行平台;、
+node是服务器端JS平台
+
+事件，异步，非阻塞I/O
+Node自带了一个包管理工具，npm
+
+核心模块：文件系统(fs, path), 网路(http),调试器
+三种主流的Node程序：
+1. web应用程序(Connect，Express,node服务器端框架)
+2. 命令行工具和后台程序
+3. 桌面程序
+
+模块：可以是一个文件，也可以是个文件目录
+
+路径 ./ 表明模块跟程序脚本放在同一目录下
+
+如果一个模块既有exports又有module.exports,会返回module.exports, 而exports会被忽略
+
+Node的世界两种响应逻辑管理方式: 回调和事件监听；
+回调是一个函数，被当作参数传给异步函数，用来描述异步操作完成之后要做什么
+
+异步逻辑的顺序化
+串行执行：async
+并行执行：把任务按照预期的顺序放入数组中
 
 http module
 
@@ -11,6 +35,7 @@ Event loop
 
 node 调试
 [方法一]
+node --inspect --debug-brk, 会启动node调试器，并且停在第一行。
 node --inspect app.js
 node --inspect-brk app.js
 打开浏览器
