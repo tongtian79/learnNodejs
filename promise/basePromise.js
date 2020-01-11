@@ -23,7 +23,7 @@
 // new Promise(function (resolve, reject) {
 //     var timeOut = Math.random() * 2;
 //     console.log('set timeout to ' + timeOut + ' seconds');
-//     setTimeout(() => {
+//     setTimeout(()   => {
 //         if (timeOut < 0.1) {
 //             console.log("call resolve() ...");
 //             resolve('200 ok')
